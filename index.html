@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <div class="navBar">
+        <p><a href="#home">Home</a></p>
+        <p>|</p>
+        <p><a href="#about">About Me</a></p>
+        <p>|</p>
+        <p><a href="#projects">My Projects</a></p>
+        <p>|</p>
+        <p><a href="#contact">Contact</a></p>
+    </div>
+
+    <div class="introBackground" id="home">
+    </div>
+    <div class="introHeader center">
+        <img class="logo" src="./images/logo.png" alt="BHLogo">
+        <h1 id="text">Hey! My name's Brian. I am a Full-Stack Developer<br></br>and Software Engineer.</h1>
+    </div>
+
+    <div class="aboutMe" id="about">
+        <!-- Slideshow container -->
+        <div class="aboutMeLeft">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="./images/renoHike.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/reno.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/coast.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="./images/tahoe.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+        <div class="aboutMeRight">
+            <h2>A Little About Me</h2>
+            <div class="aboutMeContent">
+                <p>My name is Brian Haseley, and I am a Full-Stack Developer from Cleveland, Ohio. I recently graduated
+                    from
+                    Coding Dojo
+                    and thrilled to start my journey into the field of engineering and programming. During my time
+                    there, I
+                    quickly picked up
+                    on HTML/CSS, JavaScript, Python, Java, and the React library. I have a passion for continuous
+                    learning, and am always
+                    pushing myself to strive for
+                    new goals. In my off-time, I love to travel, spend time with my wife and pups, and jam out to some
+                    live
+                    music of any kind.
+                </p>
+            </div>
+            <h3>My Toolset</h3>
+            <div class="toolsetContent">
+                <div class="toolsetItems">
+                    <div class="toolRow">
+                        <div>
+                            <h4>HTML</h4>
+                            <img class="toolImage" src="./images/html.png" alt="HTMLLogo">
+                        </div>
+                        <div>
+                            <h4>CSS</h4>
+                            <img class="toolImage" src="./images/css.jpg" alt="HTMLLogo">
+                        </div>
+
+                        <div>
+                            <h4>JavaScript</h4>
+                            <img class="toolImage" src="./images/javascript.jpg" alt="JavaScriptLogo">
+                        </div>
+                        <div>
+                            <h4>Python</h4>
+                            <img class="toolImage" src="./images/python.png" alt="PythonLogo">
+                        </div>
+                        <div>
+                            <h4>Java</h4>
+                            <img class="toolImage" src="./images/java.jpg" alt="JavaLogo">
+                        </div>
+                        <div>
+                            <h4>React</h4>
+                            <img class="toolImage" src="./images/react.jpg" alt="ReactLogo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="projects" class="projectsDiv">
+        <h3>Some of my Projects</h3>
+        <div class="singleProjDiv">
+            <h1>Volunteer Outreach</h1>
+            <h3>Java/Spring</h3>
+            <div class="projContent">
+                <div class="projPic">
+                    <img src="./images/volOutreach.png" alt="volOutreachSS">
+                </div>
+                <div class="projInfo">
+                    <h5>Driving Force</h5>
+                    <p>To create an app that can easily connect volunteers and organizers of charity events to fill any
+                        roles they need.
+                    </p>
+                    <h5>Technical Features</h5>
+                    <ul>
+                        <li>Developed a complete login/registration system, implementing Bcrypt for passwords, and
+                            working validations</li>
+                        <li>Integrated multiple API's including Google Maps, and Calendar</li>
+                        <li>Designed a user-friendly messaging interface</li>
+                        <li>Integrated multiple n:m and m:m relationships for ease of access to data with MySQL</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="contactMeDiv" id="contact">
+        <div class="message">
+            <h4>Shoot me a message!</h4>
+            <form>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Your Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Last">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Email Address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Subject</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+            </form>
+
+
+        </div>
+        <div class="contactLinks">
+            <h4>Contact Links</h4>
+            <h4>Email</h4>
+            <p>- Bchaseley@gmail.com</p>
+            <h4>GitHub</h4>
+            <p>- <a href="https://github.com/Bchaseley">https://github.com/Bchaseley</a></p>
+            <h4>LinkedIn</h4>
+            <p>- <a href="https://www.linkedin.com/in/b-chase" >https://www.linkedin.com/in/b-chase</a></p>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

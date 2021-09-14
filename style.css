@@ -1,0 +1,324 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Tahoma;
+}
+
+body h1, h2, h3, h4, h5 {
+  text-shadow: 1px 1px 10px rgb(83, 83, 83);
+}
+.logo {
+  max-width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -37vh;
+  left: 43%;
+}
+.introBackground {
+    background-image: url("./images/backgroundImage.jpg");
+    opacity: .35;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 98vh;
+    position: relative;
+    top: 0;
+}
+
+.introHeader {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    top: 55vh;
+    left: 8vw;
+    font-size: 40px;
+    text-shadow: 2px 2px 9px black;
+}
+
+.navBar {
+    background-color: rgb(225, 207, 253);
+    height: 40px;
+    display: flex;
+    padding-left: 37%;
+    padding-right: 37%;
+    justify-content: space-between;
+    align-items: bottom;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: .75;
+    position: sticky;
+    top: 0;
+    padding-bottom: 5px;
+    z-index: 10;
+}
+
+.navBar a {
+    text-decoration: none;
+}
+
+
+.aboutMe {
+    background-color: rgb(225, 207, 253);
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.aboutMeLeft {
+  width: 100%;
+}
+
+.aboutMeRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.pictureScrollDiv {
+    border: 1px solid black;
+    margin-top: -7%;
+}
+
+.picScrollPic {
+    width: 200px;
+}
+
+.aboutMeContent {
+    text-align: center;
+    margin: 5% 30%;
+    width: 60vw;
+    font-size: 20px;
+}
+
+.toolsetContent {
+    text-align: center;
+    padding: 10px;
+    width: 75vw;
+    
+
+}
+
+.toolImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.toolsetItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.toolRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.projectsDiv {
+    height: 100vh;
+    padding-top: 10vh;
+
+}
+
+.projectsDiv h1, h2, h3 {
+    text-align: center;
+}
+
+.singleProjDiv {
+    padding-top: 10vh;
+}
+
+.projContent {
+    display: flex;
+    justify-content: center;
+}
+
+.projInfo {
+    width: 30vw;
+    margin-left: 10px;
+}
+
+.projPic img {
+    width: 30vw;
+    border: 1px solid black;
+}
+
+.contactMeDiv {
+    height: 100vh;
+    background-color: rgb(225, 207, 253);
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10vh;
+}
+
+.message {
+    border: 3px solid black;
+    background-color: rgb(240, 240, 240);
+    height: 450px;
+    width: 400px;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+
+}
+
+.contactLinks {
+    border: 3px solid black;
+    background-color: rgb(240, 240, 240);
+    height: 450px;
+    width: 400px;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.contactLinks p {
+  font-size: 20px;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 20vw;
+  position: relative;
+  margin: auto;
+  animation-fill-mode: forwards;
+  background-color:#717171;
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px black;
+
+}
+
+.slideshow-container img {
+  animation-fill-mode: forwards;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  animation-fill-mode: forwards;
+  background-color: #717171;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #717171;
+  opacity: .5;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.myslides {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.char{
+  font-size: 40px;
+  height: 40px;
+  animation: an 3s ease-out 2 both;
+}
+
+@keyframes an{
+  from{
+      opacity: 0;
+      transform: perspective(500px) translate3d(-35px, -40px, -150px) rotate3d(1, -1, 0, 35deg);
+  }
+  to{
+      opacity: 1;
+      transform: perspective(500px) translate3d(0, 0, 0);
+  }
+}
+
