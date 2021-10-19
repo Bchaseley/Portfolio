@@ -30,7 +30,7 @@ function showSlides(n) {
 
 var text = document.getElementById('text');
 var newDom = '';
-var animationDelay = 30;
+var animationDelay = 20;
 
 for(let i = 0; i < text.innerText.length; i++)
 {
